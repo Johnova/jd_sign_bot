@@ -23,6 +23,6 @@ jobs:
               env:
                 JD_COOKIE: ${{ secrets.JD_COOKIE }}
                 JD_COOKIE_2: ${{ secrets.JD_COOKIE_2 }} 
-                PUSH_KEY: ${{ secrets.PUSH_KEY }}
-                DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
-                DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+                PUSH_METHOD: 'Dingtalk'
+                PUSH_KEY: ${{ secrets.DD_BOT_TOKEN }}
+                PUSH_SECRET: ${{ secrets.DD_BOT_SECRET }}
