@@ -21,9 +21,9 @@ async function downFile () {
 // 修改文件
 async function changeFile () {
    let content = await fs.readFileSync('./JD_DailyBonus.js', 'utf8')
-   content = content.replace(/var Key = ''/, `var Key = '${KEY}'`);
+   // content = content.replace(/var Key = ''/, `var Key = '${KEY}'`);
    if (DualKey) {
-    content = content.replace(/var DualKey = ''/, `var DualKey = '${DualKey}'`);
+    // content = content.replace(/var DualKey = ''/, `var DualKey = '${DualKey}'`);
    }
    await fs.writeFileSync( './JD_DailyBonus.js', content, 'utf8')
 }
@@ -54,17 +54,17 @@ async function sendNotify () {
 
 // 主程序
 async function main() {
-  if (!KEY) {
-    console.log('请填写 key 后在继续')
-    return
-  }
+  //if (!KEY) {
+   // console.log('请填写 key 后在继续')
+  //  return
+  //}
   // 下载最新代码
   await downFile();
   console.log('下载代码完毕');
   
   // 替换变量
-  await changeFile();
-  console.log('替换变量完毕');
+  //await changeFile();
+  //console.log('替换变量完毕');
   
   // 执行
   await exec("node JD_DailyBonus.js >> result.txt");
