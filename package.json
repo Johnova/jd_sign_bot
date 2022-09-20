@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruicky/jd_sign_bot.git"
+    "url": "git+https://github.com/johnova/jd_sign_bot.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ruicky/jd_sign_bot/issues"
+    "url": "https://github.com/johnova/jd_sign_bot/issues"
   },
-  "homepage": "https://github.com/ruicky/jd_sign_bot#readme",
+  "homepage": "https://github.com/johnova/jd_sign_bot#readme",
   "dependencies": {
     "download": "^8.0.0",
     "push-all-in-one": "^2.0.0",
